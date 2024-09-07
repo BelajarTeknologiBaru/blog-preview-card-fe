@@ -1,0 +1,147 @@
+/* Variabel color */
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+}
+
+html,
+body,
+:root {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-yellow);
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 384px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: var(--color-white);
+  padding: 24px;
+  border: 2px solid var(--color-gray-950);
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card .card-content {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card .card-content .card-content-category {
+  background-color: var(--color-yellow);
+  width: 82px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.card .card-content .card-content-category p {
+  color: var(--color-gray-950);
+  font-weight: 800;
+}
+
+.published-date {
+  color: var(--color-gray-950);
+  font-size: 14px;
+}
+
+.title {
+  color: var(--color-gray-950);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.description {
+  color: var(--color-gray-500);
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.card .card-footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-footer .author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card-footer p {
+  color: var(--color-gray-950);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.shadow {
+  background-color: var(--color-gray-950);
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  z-index: -1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  content: "Challenge by Frontend Mentor. Coded by [your name here].";
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1440px) {
+  .card {
+    width: 327px;
+  }
+}
